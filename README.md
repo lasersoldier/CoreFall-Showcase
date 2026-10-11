@@ -46,9 +46,9 @@
 
 ## Demo 视频
 
-<video src="https://github.com/lasersoldier/CoreFall-Showcase/raw/main/media/trailer.mp4" controls muted width="100%"></video>
+[![▶ 观看完整预告片 / Watch the full trailer](screenshots/17-endless-250-enemies.png)](https://github.com/lasersoldier/CoreFall-Showcase/blob/main/media/trailer.mp4)
 
-> 上方为完整预告片（可直接播放）。如果你的浏览器没有显示播放器，请下载 [`media/trailer.mp4`](media/trailer.mp4)。
+> ▶ 点击上图在 GitHub 页面内播放完整预告片（2 分 57 秒）；也可下载 [`media/trailer.mp4`](media/trailer.mp4)。下方 GIF 只是 8 秒预览。
 
 ![preview](media/preview.gif)
 
