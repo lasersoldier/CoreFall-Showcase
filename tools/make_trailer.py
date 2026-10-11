@@ -1,7 +1,7 @@
 """Cut the CoreFall promo trailer from a raw gameplay recording with ffmpeg.
 
 Usage:  python tools/make_trailer.py <hub_story_recording.mkv> <endless_recording.mkv> [--ffmpeg path/to/ffmpeg.exe]
-Outputs media/trailer.mp4, media/preview.gif and screenshots/*.png
+Outputs media/trailer.mp4, media/trailer.gif and screenshots/*.png
 
 Only clean in-game segments are used; editor/debug stretches of the raw
 recording are skipped (see CLIPS). Captions are burned in with drawtext.
@@ -70,7 +70,7 @@ def main():
     lst = f"{tmp}/list.txt"; open(lst, "w").write("".join(f"file '{p.replace(chr(92), '/')}'\n" for p in parts))
     trailer = f"{root}/media/trailer.mp4"
     run(ff, "-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", "-movflags", "+faststart", trailer)
-    run(ff, "-ss", "170", "-t", "8", "-i", a.endless, "-vf",
-        "fps=8,scale=560:-1:flags=lanczos,split[a][b];[a]palettegen=max_colors=64[p];[b][p]paletteuse=dither=bayer:bayer_scale=4", f"{root}/media/preview.gif")
+    run(ff, "-i", trailer, "-an", "-vf",
+        "fps=8,scale=640:-1:flags=lanczos,split[a][b];[a]palettegen=max_colors=64:stats_mode=diff[p];[b][p]paletteuse=dither=bayer:bayer_scale=5:diff_mode=rectangle", f"{root}/media/trailer.gif")
     print("done:", trailer)
 if __name__ == "__main__": main()

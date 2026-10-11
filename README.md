@@ -46,13 +46,9 @@
 
 ## Demo 视频
 
-[![▶ 观看完整预告片 / Watch the full trailer](screenshots/17-endless-250-enemies.png)](https://github.com/lasersoldier/CoreFall-Showcase/blob/main/media/trailer.mp4)
+![CoreFall trailer](media/trailer.gif)
 
-> ▶ 点击上图在 GitHub 页面内播放完整预告片（2 分 57 秒）；也可下载 [`media/trailer.mp4`](media/trailer.mp4)。下方 GIF 只是 8 秒预览。
-
-![preview](media/preview.gif)
-
-完整预告片（约 2 分 57 秒，1080p，带中英文字幕，压轴为同屏 200+ 敌人的无尽模式）：[`media/trailer.mp4`](media/trailer.mp4)（点击后下载或在 GitHub 页面内播放）。
+> 上图为完整预告片的 GIF 版（2 分 57 秒，640p，8 fps，首次加载约 37 MB，请稍候）。1080p 带声音的版本：[`media/trailer.mp4`](media/trailer.mp4)。
 
 预告片由 [`tools/make_trailer.py`](tools/make_trailer.py) 从两段原始录屏用 ffmpeg 自动剪出，调试片段已剔除。
 
