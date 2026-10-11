@@ -46,6 +46,10 @@
 
 ## Demo 视频
 
+<video src="https://github.com/lasersoldier/CoreFall-Showcase/raw/main/media/trailer.mp4" controls muted width="100%"></video>
+
+> 上方为完整预告片（可直接播放）。如果你的浏览器没有显示播放器，请下载 [`media/trailer.mp4`](media/trailer.mp4)。
+
 ![preview](media/preview.gif)
 
 完整预告片（约 2 分 57 秒，1080p，带中英文字幕，压轴为同屏 200+ 敌人的无尽模式）：[`media/trailer.mp4`](media/trailer.mp4)（点击后下载或在 GitHub 页面内播放）。
